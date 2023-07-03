@@ -1,7 +1,7 @@
 #https://#stackoverflow.com/questions/22765313/when-import-docx-in-python3-3-i-
 # have-error-importerror-no-module-named-excepti
 
-from exceptions import ValueError
+from BaseExceptions import ValueError
 
 class ValidationError(ValueError):
     def __init__(self, message):
