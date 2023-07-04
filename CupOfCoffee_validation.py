@@ -17,11 +17,16 @@ class CupOfCoffee:
 
 def fill_cup_of_coffee(cup, ml):
     try:
-        ml += 100
+        #ml += 100
         cup.filled_ml = ml
     except TooSmallValue as error:
         print('Ошибка заполнения:', error)
     except TooBigValue as error:
         print('Ошибка заполнения:', error)
-        
 
+
+cup = CupOfCoffee(200, 150)
+ml = 250
+
+result = fill_cup_of_coffee(cup, ml)
+print(result)
