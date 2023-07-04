@@ -3,6 +3,7 @@
 
 from validationError import TooSmallValue, TooBigValue
 
+
 class CupOfCoffee:
     def __init__(self, size_ml, filled_ml):
         self.size_ml = size_ml
@@ -17,7 +18,7 @@ class CupOfCoffee:
 
 def fill_cup_of_coffee(cup, ml):
     try:
-        #ml += 100
+
         cup.filled_ml = ml
     except TooSmallValue as error:
         print('Ошибка заполнения:', error)
